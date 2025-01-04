@@ -1,7 +1,7 @@
 {
     'name': 'CRM Automation',
     'version': '1.0',
-    'depends': ['base','crm'],
+    'depends': ['base','crm','mail'],
     'category': 'Sales/CRM',
     'summary': 'Automated CRM features with reminders and feedback',
     'description': """
