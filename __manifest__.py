@@ -1,6 +1,7 @@
 {
     'name': 'CRM Automation',
-    'version': '16.0.1.0.0',
+    'version': '1.0',
+    'depends': ['base'],
     'category': 'Sales/CRM',
     'summary': 'Automated CRM features with reminders and feedback',
     'description': """
@@ -9,14 +10,11 @@
         - Automated reminders (7/15/30 days)
         - Customer feedback surveys
     """,
-    'author': 'Chabab',
-    'depends': ['base', 'crm', 'mail'],
+    'author': 'Bardin lktaf',
     'data': [
         'security/ir.model.access.csv',
-        'views/crm_lead_views.xml',
-        'views/feedback_survey_views.xml',
+        'views/my_model_views.xml',
     ],
-    'application': True,
     'installable': True,
     'auto_install': False,
 }
