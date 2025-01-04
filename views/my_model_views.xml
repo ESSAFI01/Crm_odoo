@@ -41,7 +41,6 @@
         <menuitem 
             id="menu_feedback_survey" 
             name="Feedback Surveys" 
-            parent="sales_team.menu_sales_config" 
             action="action_feedback_survey" 
             sequence="10"/>
     </data>
