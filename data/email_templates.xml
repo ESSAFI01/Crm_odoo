@@ -1,40 +1,10 @@
-<!--<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="email_template_crm_reminder" model="mail.template">
-        <field name="name">CRM Reminder Email</field>
-        <field name="model_id" ref="crm.model_crm_lead"/>
-        <field name="email_from">${(user.email or 'no-reply@yourdomain.com')|safe}</field>
-        <field name="subject">Reminder: Follow-up on Opportunity ${object.name}</field>
-        <field name="email_to">${object.partner_id.email}</field>
-        <field name="email_cc">${user.email}</field>
-        <field name="body_html" type="html">
-            <![CDATA[
-            <p>Dear ${object.partner_id.name},</p>
-            <p>This is a friendly reminder regarding your ongoing opportunity: <strong>${object.name}</strong>.</p>
-            <p>Please don't hesitate to contact us for further assistance.</p>
-            <p>Best regards,</p>
-            <p>${user.name}</p>
-            ]]>
-        </field>
-    </record>
-
-    <record id="email_template_crm_feedback" model="mail.template">
-        <field name="name">Customer Feedback Request</field>
-        <field name="model_id" ref="crm.model_crm_lead"/>
-        <field name="email_from">${(user.email or 'no-reply@yourdomain.com')|safe}</field>
-        <field name="subject">We value your feedback for ${object.name}</field>
-        <field name="email_to">${object.partner_id.email}</field>
-        <field name="body_html" type="html">
-            <![CDATA[
-            <p>Dear ${object.partner_id.name},</p>
-            <p>Thank you for your recent interaction with us regarding: <strong>${object.name}</strong>.</p>
-            <p>We would appreciate it if you could take a few moments to fill out our feedback survey to help us improve our services.</p>
-            <p><a href="${object.survey_url}" target="_blank">Click here to provide your feedback</a></p>
-            <p>Thank you for your time!</p>
-            <p>Best regards,</p>
-            <p>${user.name}</p>
-            ]]>
-        </field>
-    </record>
+    <data>
+        <record id="my_cron_job" model="ir.cron">
+            <field name="name">My Cron Job</field>
+            <field name="model_id" ref="model_my_model"/>
+            <field name="state">code</field>
+            <field name="code">model.my_method()</field>
+        </record>
+    </data>
 </odoo>
--->

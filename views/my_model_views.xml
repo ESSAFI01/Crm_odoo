@@ -39,7 +39,7 @@
 
     <menuitem 
         id="menu_feedback_survey" 
-        name="Feedback Surveys" 
+        name="CRM Automation" 
         action="action_feedback_survey" 
         sequence="10"/>
 </odoo>
